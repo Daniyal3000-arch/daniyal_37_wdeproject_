@@ -1,0 +1,682 @@
+/* base styles */ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Georgia", "Times New Roman", serif;
+}
+
+/* Body background all pages*/
+body {
+    line-height: 1.6;
+    color: #ffffff;
+    background-image: url("Images/Background Image.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Header bar with logo + nav all pages */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 0 60px;
+    background: linear-gradient(to right, #16351f, #245b30);
+    border-bottom: 1px solid #D4A72C;
+}
+
+/* Logo image all pages */
+header .logo img {
+    height: 200px;
+    width: auto;
+    display: block;
+}
+
+/* Nav bar layout all pages */
+nav {
+    flex: 1;                         
+    display: flex;
+    justify-content: center;        
+    align-items: center;
+    gap: 40px;
+}
+
+/* Nav links list all pages*/
+nav ul.navbar {
+    display: flex;
+    justify-content: center;        
+    align-items: center;
+    list-style: none;
+    gap: 55px;
+    flex: 0 1 auto;                 
+    margin: 0 auto;                 
+}
+
+/* Search + cart icons container all pages */
+.nav-icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Search + cart images all pages */
+nav img {
+    width: 50px;            
+    height: 50px;
+    object-fit: contain;
+}
+
+/* Nav links styling all pages */
+nav ul.navbar li a,
+nav ul.navbar li a:link,
+nav ul.navbar li a:visited {
+    display: inline-block;
+    padding: 8px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fdfdfd;
+    text-decoration: none;
+}
+
+/* Nav links hover state all pages */
+nav ul.navbar li a:hover {
+    color: #D4A72C;
+}
+
+/* Gold divider under header all pages */
+.gold-divider {
+    width: 100%;
+    height: 3px;
+    background-color: #D4A72C;
+}
+
+/* Main layout padding all pages */
+main {
+    padding: 40px 5% 40px 5%;
+}
+
+/* "Featured Products" heading on homepage index.html */
+.featured-title {
+    text-align: center;
+    font-size: 75px;
+    color: #faeabd;
+    margin: 50px 0 25px 0;
+    text-shadow: 0px 2px 8px rgba(0,0,0,0.7);
+}
+
+/* Row of featured product cards homepage index.html */
+.featured-container {
+    width: 85%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+/* Single featured product card homepage index.html */
+.featured-banner {
+    width: 32%;
+    background-color: #02170d;
+    border: 1px solid #D4A72C;
+    border-radius: 12px;
+    padding: 20px;
+    display: block;
+    text-align: center;
+}
+
+/* Featured product image homepage index.html */
+.featured-banner img {
+    width: 100%;
+    height: 220px;
+    object-fit: contain;
+    border-radius: 10px;
+    margin-bottom: 14px;
+}
+
+/* Featured product title homepage index.html */
+.featured-banner h2 {
+    font-size: 22px;
+    color: #D4A72C;
+    margin-bottom: 10px;
+}
+
+/* Featured product description text homepage index.html */
+.featured-banner p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Hero section layout index.html, products.html, contactus.html */
+.hero {
+    width: 100%;
+    max-width: 1200px;   
+    margin: 30px auto 40px auto;
+    text-align: center;
+    padding: 0 40px;
+}
+
+/* Main hero heading homepage index.html */
+.hero h1{
+    font-size: 105px;
+    line-height: 1.5;
+    color: #ffffff;
+    text-shadow: 0px 3px 10px rgba(0, 0, 0, 0.85);
+    margin-bottom: 18px;
+}
+
+/* Hero subheading homepage index.html */
+.hero h2{
+    font-size: 35px;
+    line-height: 1.5;
+    color: #d7dbb5;
+    text-shadow: 0px 3px 10px rgba(0, 0, 0, 0.85);
+    margin-bottom: 25px;
+}
+
+/* Hero paragraph text index.html, products.html, contactus.html */
+.hero p{
+    font-size: 20px;
+    color: #ffffff;
+    margin-bottom: 10px;
+    text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+/* Hero call-to-action text styling homepage index.html */
+.hero-cta,
+.cta {
+    font-size: 22px;
+    font-weight: bold;
+    color: #D4A72C;
+    text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.8);
+    margin-top: 10px;
+}
+
+/* "Shop now" button - homepage index.html, reusable */
+.cta-button {
+    display: inline-block;
+    padding: 12px 32px;
+    margin-top: 20px;
+    background-color: #D4A72C;
+    color: #02170d;
+    border-radius: 30px;
+    border: 2px solid #D4A72C;
+    font-weight: 700;
+    font-size: 18px;
+    text-decoration: none;
+    text-align: center;
+    text-transform: none;
+}
+/* change color when you hover over  */
+.cta-button:hover {
+    background-color: #faeabd; 
+    color: #022411;            
+    border-color: #faeabd;    
+}
+
+/* Info cards under 'How It Works' homepage index.html */
+.column-how .why-card {
+    background-color: #02170d;
+    border: 1px solid #D4A72C;
+    padding: 18px 20px;
+    border-radius: 12px;
+    margin-top: 18px;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+/* Small text inside 'How It Works' cards homepage index.html */
+.column-how .why-card span {
+    display: block;
+    margin-top: 6px;
+    font-size: 15px;
+    color: #dcdcdc;
+}
+
+/* Two-column info box homepage index.html, aboutus.html */
+.content-box {
+    width: 85%;
+    margin: 0 auto 40px auto;
+    padding: 40px 40px;
+    background-color: #02170d;
+    border: 1px solid #D4A72C;
+    border-radius: 10px;
+    display: flex;
+    gap: 40px;
+}
+
+/* Homepage bottom columns index.html */
+.column-about,
+.column-how {
+    width: 50%;
+}
+
+/* Column headings index.html and aboutus.html */
+.column-about h2,
+.column-about h3,
+.column-how h2,
+.column-how h3 {
+    font-size: 26px;
+    color: #D4A72C;
+    margin-bottom: 15px;
+}
+
+/* Paragraph text inside homepage columns index.html */
+.column-about p,
+.column-how p {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+/* Extra spacing for product-style lists index.html */
+.products-list {
+    margin-top: 8px;
+}
+
+/* Ordered list alignment in a right column index.html and aboutus.html */
+.column-right ol {
+    margin-left: 20px;
+    padding-left: 0;
+}
+
+/* About page hero heading & subtext aboutus.html */
+.about-hero {
+    text-align: center;
+    padding: 120px 40px 80px 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.about-hero h1 {
+    font-size: 150px;
+    font-weight: 700;
+    color: #D4A72C;
+    text-shadow: 0px 3px 10px rgba(0, 0, 0, 0.8);
+    margin-bottom: 20px;
+}
+
+.about-hero p {
+    font-size: 28px;
+    color: #ffffff;
+    line-height: 1.6;
+    text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+/* About page main card container aboutus.html */
+.about-card {
+    width: 85%;
+    margin: 0 auto 40px auto;
+    padding: 40px 40px;
+    background-color: #02170d;
+    border: 1px solid #D4A72C;
+    border-radius: 10px;
+}
+
+/* About page introductory paragraphs aboutus.html */
+.about-intro p {
+    font-size: 20px;
+    line-height: 1.8;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+/* Divider line inside about card - aboutus.html */
+.about-card hr {
+    border: 0;
+    height: 1px;
+    background-color: #355f40;
+    margin: 30px 0;
+}
+
+/* Two-column layout inside about card aboutus.html */
+.about-grid {
+    display: flex;
+    gap: 40px;
+}
+
+/* Single column inside about grid aboutus.html */
+.about-column {
+    width: 50%;
+}
+
+/* Column headings inside about grid aboutus.html */
+.about-column h2 {
+    font-size: 24px;
+    color: #D4A72C;
+    margin-bottom: 10px;
+}
+
+/* Paragraphs inside about grid columns - aboutus.html */
+.about-column p {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 12px;
+    color: #ffffff;
+}
+
+/* Green pill tagline on about page aboutus.html */
+.about-pill {
+    display: inline-block;
+    margin: 15px 0;
+    padding: 8px 16px;
+    border-radius: 20px;
+    border: 1px solid #D4A72C;
+    background-color: #36a13b;
+}
+
+/* Text inside green pill aboutus.html */
+.about-pill span {
+    font-size: 16px;
+    color: #D4A72C;
+    font-weight: bolder;
+}
+
+/* Founder section wrapper aboutus.html */
+.about-ceo {
+    margin-top: 30px;
+    text-align: center;
+}
+
+/* CEO photo styling aboutus.html */
+.ceo-photo {
+    width: 200px;          
+    height: auto;
+    border-radius: 0;      
+    object-fit: cover;
+    border: 2px solid #D4A72C;
+    box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.7);
+    margin-bottom: 12px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;   
+}
+
+/* "Meet our founder" heading aboutus.html */
+.about-ceo h2 {
+    font-size: 24px;
+    color: #D4A72C;
+    margin-bottom: 6px;
+}
+
+/* CEO name text aboutus.html */
+.ceo-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+/* Body copy in CEO story aboutus.html */
+.about-ceo p {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 8px;
+}
+
+/* Lists inside content-box and about-card index.html and aboutus.html */
+.content-box ul,
+.content-box ol,
+.about-card ul,
+.about-card ol {
+    margin-top: 8px;
+    margin-left: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+/* List items styling index.html and aboutus.html */
+.content-box li,
+.about-card li {
+    font-size: 19px;
+    line-height: 1.7;
+    margin-bottom: 10px;
+    color: #f5f5f5;
+}
+
+/* Bold text in lists index.html and aboutus.html */
+.content-box li strong,
+.about-card li strong {
+    color: #D4A72C;
+    font-weight: 700;
+}
+
+/* Default footer index.html and aboutus.html */
+footer {
+    width: 100%;
+    margin-top: 90px;
+    padding: 18px 30px;
+    background: linear-gradient(to right, #16351f, #245b30);
+    border-top: 1px solid #D4A72C;
+    text-align: center;
+    color: #D4A72C;
+    font-size: 16px;
+}
+
+/* Products page hero spacing products.html */
+.products-hero {
+    margin-bottom: 50px;
+}
+
+/* Products main section wrapper products.html */
+.products-section {
+    width: 85%;
+    margin: 0 auto 40px auto;
+}
+
+/* Products grid layout products.html */
+.products-grid {
+    display: flex;
+    flex-wrap: wrap;       
+    gap: 30px;            
+    justify-content: center; 
+}
+
+/* Single product card products.html */
+.product-card {
+    flex: 0 1 260px;       
+    background-color: #02170d;
+    border: 1px solid #D4A72C;
+    border-radius: 10px;
+    padding: 24px 24px 28px 24px;
+    text-align: left;
+    flex-direction: column;
+}
+
+/* Product title text products.html */
+.product-title {
+    font-size: 22px;
+    color: #D4A72C;
+    margin-bottom: 4px;
+}
+
+/* Product price text products.html */
+.product-price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 12px;
+}
+
+/* Product image styling products.html */
+.product-image {
+    width: 100%;
+    height: auto;          
+    max-height: 220px;     
+    object-fit: contain;   
+    display: block;
+    margin: 0 auto 14px auto;  
+    border-radius: 8px;
+}
+
+/* Product description text products.html */
+.product-desc {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #ffffff;
+    margin-bottom: 16px;
+}
+
+/* "Add to cart" button look products.html */
+.product-cta {
+    display: inline-block;
+    padding: 10px 24px;
+    margin-top: auto;
+    background-color: #D4A72C;
+    color: #02170d;
+    border-radius: 25px;
+    border: 2px solid #D4A72C;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Products page footer */
+.products-page footer {
+    width: 100%;
+    margin-top: 50px;
+    padding: 18px 30px;
+    background: linear-gradient(to right, #16351f, #245b30);
+    border-top: 1px solid #D4A72C;
+    text-align: center;
+    color: #D4A72C;
+    font-size: 16px;
+}
+
+/* Contact page hero spacing contactus.html */
+.contact-hero {
+    margin-bottom: 40px;
+}
+
+/* Contact main section wrapper contactus.html */
+.contact-section {
+    width: 85%;
+    margin: 0 auto 40px auto;
+}
+
+/* Contact card layout contactus.html */
+.contact-card {
+    background-color: #02170d;
+    border: 1px solid #D4A72C;
+    border-radius: 10px;
+    padding: 40px;
+    display: flex;
+    gap: 50px;
+    align-items: flex-start;
+}
+
+/* Contact right column: map container contactus.html */
+.contact-map {
+    width: 50%;
+}
+
+/* List items in contact details contactus.html */
+.contact-list li {
+    font-size: 19px;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+/* Support info box contactus.html */
+.support-box {
+    margin-top: 25px;
+    padding: 18px;
+    border: 1px solid #355f40;
+    background-color: #032314;
+    border-radius: 10px;
+}
+
+/* Support box heading contactus.html */
+.support-box h3 {
+    color: #D4A72C;
+    margin-bottom: 6px;
+}
+
+/* "Send us a message" button contactus.html */
+.contact-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 26px;
+    background-color: #D4A72C;
+    color: #02170d;
+    border-radius: 25px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Hover state for contact button contactus.html */
+.contact-btn:hover {
+    background-color: #faeabd;
+    color: #022411;
+}
+
+/* FAQ box wrapper contactus.html */
+.faq-box {
+    margin-top: 28px;
+}
+
+/* FAQ box heading contactus.html */
+.faq-box h3 {
+    color: #D4A72C;
+    margin-bottom: 8px;
+    font-size: 25px;
+}
+
+/* FAQ list items contactus.html */
+.faq-box li {
+    color: #ffffff;
+    margin-bottom: 6px;
+    font-size: 19px;
+    margin-left: 10px;
+}
+
+/* Base contact column width contactus.html */
+.contact-column {
+    width: 50%;
+}
+
+/* Headings for contact columns contactus.html */
+.contact-column h2 {
+    font-size: 24px;
+    color: #D4A72C;
+    margin-bottom: 10px;
+}
+
+/* Text inside contact info column contactus.html */
+.contact-info p,
+.contact-info li {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #ffffff;
+}
+
+/* Contact info unordered list contactus.html */
+.contact-info ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 12px;
+}
+
+/* Map image styling contactus.html */
+.map-image {
+    width: 100%;
+    height: auto;
+    border: 1px solid #D4A72C;
+    border-radius: 8px;
+    display: block;
+}
+
+/* Contact page footer */
+.contact-page footer {
+    width: 100%;
+    margin-top: 25px;
+    padding: 18px 30px;
+    background: linear-gradient(to right, #16351f, #245b30);
+    border-top: 1px solid #D4A72C;
+    text-align: center;
+    color: #D4A72C;
+    font-size: 16px;
+}
